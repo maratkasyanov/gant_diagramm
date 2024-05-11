@@ -1,0 +1,76 @@
+{
+  "name": "resource-histogram",
+  "description": "Resource histogram demo (React)",
+  "version": "5.6.10",
+  "author": {
+    "name": "Bryntum",
+    "url": "https://bryntum.com",
+    "email": "info@bryntum.com"
+  },
+  "license": "commercial",
+  "homepage": "./",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "postinstall": "postinstall"
+  },
+  "postinstall": {
+    "node_modules/@bryntum/demo-resources/images/users/*": "copy public/users/",
+    "node_modules/@bryntum/demo-resources/images/favicon.png": "copy public/",
+    "node_modules/@bryntum/gantt/*.css*": "copy public/themes/",
+    "node_modules/@bryntum/gantt/fonts/*": "copy public/themes/fonts/"
+  },
+  "dependencies": {
+    "@bryntum/demo-resources": "1.3.0",
+    "@bryntum/gantt": "npm:@bryntum/gantt-trial@^5.6.10",
+    "@bryntum/gantt-react": "^5.6.10",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@fontsource/roboto": "^5.0.13",
+    "@mui/icons-material": "^5.15.17",
+    "@mui/material": "^5.15.17",
+    "@reduxjs/toolkit": "^2.2.3",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.96",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "firebase": "^10.11.1",
+    "material-ui-popup-state": "^5.1.0",
+    "react": "^18.3.1",
+    "react-datepicker": "^6.9.0",
+    "react-dom": "^18.3.1",
+    "react-redux": "^9.1.2",
+    "react-router-dom": "^6.23.0",
+    "react-scripts": "5.0.1",
+    "redux-toolkit": "^1.1.2",
+    "sass": "1.32.11",
+    "web-vitals": "1.1.1"
+  },
+  "devDependencies": {
+    "babel-preset-react-app": "npm:@bryntum/babel-preset-react-app@10.0.0",
+    "postinstall": "0.7.4"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": {
+    "production": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  }
+}
