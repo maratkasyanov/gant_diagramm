@@ -1,1 +1,0 @@
-# gant_diagramm
